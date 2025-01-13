@@ -5,8 +5,10 @@ const assets = [
     "./style.css",
     "./app.js",
     "./manifest.json",
-    "/icon-192x192.png",
-    "/icon-512x512.png"
+    // "/icon-192x192.png",
+    // "/icon-512x512.png",
+    "https://zhengzi.github.io/FIRElife/icon-192x192.png",  // Use absolute URL
+    "https://zhengzi.github.io/FIRElife/icon-512x512.png"
 ];
 
 self.addEventListener("install", event => {
