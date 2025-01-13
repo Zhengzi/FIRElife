@@ -11,27 +11,31 @@
 </head>
 <body>
     <div class="calculator">
-        <input type="text" id="display" readonly>
-        <div class="buttons">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>/</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>*</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>-</button>
-            <button>0</button>
-            <button>.</button>
-            <button>=</button>
-            <button>+</button>
-            <button>Clear</button>
+        <h2>Retirement Calculator</h2>
+        <form id="retirement-form">
+            <label for="capital">Capital (Initial savings): </label>
+            <input type="number" id="capital" placeholder="e.g. 10000" required>
+    
+            <label for="interest-rate">Interest Rate (Annual %): </label>
+            <input type="number" id="interest-rate" placeholder="e.g. 5" required>
+    
+            <label for="monthly-spent">Monthly Spent: </label>
+            <input type="number" id="monthly-spent" placeholder="e.g. 2000" required>
+    
+            <label for="monthly-income">Monthly Income: </label>
+            <input type="number" id="monthly-income" placeholder="e.g. 3000" required>
+    
+            <label for="target-goal">Target Retirement Goal: </label>
+            <input type="number" id="target-goal" placeholder="e.g. 1000000" required>
+    
+            <button type="submit">Calculate</button>
+        </form>
+    
+        <div id="result">
+            <p>Your estimated retirement time: <span id="years-to-retire">N/A</span> years</p>
         </div>
     </div>
+
     <script src="/FIRElife/app.js"></script>
 </body>
 </html>
