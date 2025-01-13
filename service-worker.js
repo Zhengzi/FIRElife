@@ -1,14 +1,14 @@
 const cacheName = "calculator-cache-v1";
 const assets = [
-    "./",
-    "./index.html",
-    "./style.css",
-    "./app.js",
-    "./manifest.json",
-    // "/icon-192x192.png",
-    // "/icon-512x512.png",
-    "https://zhengzi.github.io/FIRElife/icon-192x192.png",  // Use absolute URL
-    "https://zhengzi.github.io/FIRElife/icon-512x512.png"
+    "/FIRElife/",
+    "/FIRElife/index.html",
+    "/FIRElife/style.css",
+    "/FIRElife/app.js",
+    "/FIRElife/manifest.json",
+    "/FIRElife/icon-192x192.png",
+    "/FIRElife/icon-512x512.png",
+    // "https://zhengzi.github.io/FIRElife/icon-192x192.png",  // Use absolute URL
+    // "https://zhengzi.github.io/FIRElife/icon-512x512.png"
 ];
 
 self.addEventListener("install", event => {
